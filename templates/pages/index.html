@@ -5,7 +5,15 @@
     {% include 'components/navbar.html' %}
 {% endblock navbar %}
 
+{% block left_sidebar %}
+    {% include 'components/sidebars/left/sidebar.html' %}
+{% endblock left_sidebar %}
+
 {% block content %} 
-    <h1 class="text-2xl font-bold mb-4 bg-red-800 ">Welcome to the Home Page</h1>
-    <p>This is the main content area of the home page index.</p>
+    {% include 'components/content.html' %}
 {% endblock content %}
+
+{% block right_sidebar %}
+    {% include 'components/sidebars/right/sidebar.html' %}
+{% endblock right_sidebar %}
+
